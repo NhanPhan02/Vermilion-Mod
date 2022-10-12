@@ -1,0 +1,49 @@
+{
+  "mod_elements": [
+    {
+      "name": "CompressedRedstoneChunk",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_redstone_chunk"
+    },
+    {
+      "name": "CompressedRedstoneChunkRecip",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "compressed_redstone_chunk_recip"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.vermilion.compressed_redstone_chunk": "Compressed Redstone Chunk"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "vermilion",
+    "modName": "Vermilion",
+    "version": "1.0.0",
+    "author": "theam, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.vermilion",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}
