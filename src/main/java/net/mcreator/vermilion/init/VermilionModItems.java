@@ -8,7 +8,10 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.vermilion.item.DropOfRedItem;
 import net.mcreator.vermilion.item.CompressedRedstoneChunkItem;
@@ -19,4 +22,9 @@ public class VermilionModItems {
 	public static final RegistryObject<Item> COMPRESSED_REDSTONE_CHUNK = REGISTRY.register("compressed_redstone_chunk",
 			() -> new CompressedRedstoneChunkItem());
 	public static final RegistryObject<Item> DROP_OF_RED = REGISTRY.register("drop_of_red", () -> new DropOfRedItem());
+	public static final RegistryObject<Item> CARMINE_CARNATION = block(VermilionModBlocks.CARMINE_CARNATION, CreativeModeTab.TAB_DECORATIONS);
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+	}
 }

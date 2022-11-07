@@ -23,6 +23,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "drop_of_red"
+    },
+    {
+      "name": "CarmineCarnation",
+      "type": "plant",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "carmine_carnation"
     }
   ],
   "variable_elements": [],
@@ -30,6 +38,7 @@
   "language_map": {
     "en_us": {
       "item.vermilion.compressed_redstone_chunk": "Compressed Redstone Chunk",
+      "block.vermilion.carmine_carnation": "Carmine Carnation",
       "item.vermilion.drop_of_red": "Drop Of Red"
     }
   },

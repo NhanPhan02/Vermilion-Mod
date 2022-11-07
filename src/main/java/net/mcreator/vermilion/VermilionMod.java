@@ -27,6 +27,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.vermilion.init.VermilionModItems;
+import net.mcreator.vermilion.init.VermilionModFeatures;
+import net.mcreator.vermilion.init.VermilionModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -44,8 +46,10 @@ public class VermilionMod {
 	public VermilionMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		VermilionModBlocks.REGISTRY.register(bus);
 		VermilionModItems.REGISTRY.register(bus);
+
+		VermilionModFeatures.REGISTRY.register(bus);
 
 	}
 
